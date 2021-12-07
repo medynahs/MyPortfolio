@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ButtonStyles = styled.div`
 
   .custom-btn {
-    width: 130px;
+    width: 180px;
     height: 40px;
     color: #fff;
     padding: 10px 25px;

@@ -1,13 +1,35 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import Frame from '../../components/Frame';
+import HorizontalScroll from 'react-scroll-horizontal';
 
-const Projects = () => {
-    return (
-        <div>
-            <h1>Projects</h1>
-            <Link to="/">retornar a página inicial</Link>
-        </div>
-    );
+const ProjectsStyles = styled.div`
+  .title {
+    font-size: 5rem;
+    color: white;
+    justify-content: center;
+    display: flex;
+  }
+
+  .direction {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+`;
+
+export default function Projects() {
+  return (
+    <ProjectsStyles>
+     <p className='title'>Projects</p>
+     <div className='direction'>
+       <Frame/>
+       <Frame/>
+       <Frame/>
+     </div>
+       
+     
+    </ProjectsStyles>
+  );
 }
-
-export default Projects;

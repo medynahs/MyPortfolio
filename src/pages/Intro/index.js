@@ -22,7 +22,7 @@ export default function Intro() {
   return (
     <IntroStyles>
       <div className="center">
-          <p className="title">Ariane Medina</p>
+        <p className="title">Ariane Medina</p>
         <Button buttonTitle={"Enter"} />
       </div>
     </IntroStyles>
