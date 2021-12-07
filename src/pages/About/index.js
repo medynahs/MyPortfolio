@@ -1,20 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const NavStyles = styled.nav`
-  
-    .background {
-        background-color: pink;
-        height: 500px;
-    }
+const AboutStyles = styled.div`
+  .title {
+    font-size: 5rem;
+    color: white;
+    justify-content: center;
+    display: flex;
+  }
 `;
 
 export default function About() {
   return (
-    <NavStyles>
-     <div className='background'>
-
-     </div>
-    </NavStyles>
+    <AboutStyles>
+      <p className="title">About</p>
+    </AboutStyles>
   );
 }

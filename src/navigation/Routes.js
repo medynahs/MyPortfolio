@@ -10,8 +10,8 @@ const Navigation = () => {
        <Router>
        <Routes>
            <Route component = { Home }  path="/" exact />
-           <Route component = { About }  path="/sobre" />
-           <Route component = { Projects }  path="/sobre" />
+           <Route component = { About }  path="/about" />
+           <Route component = { Projects }  path="/projects" />
        </Routes>
        </Router>
    )
