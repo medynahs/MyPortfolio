@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "../../components/Card";
 import Button from "../../components/Button";
+import Brain from "../../assets/brain.jpg";
 
 const ResumeStyles = styled.div`
   .title {
@@ -18,11 +19,23 @@ const ResumeStyles = styled.div`
     text-align: center;
   }
 
+  .skill {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: -10px;
+  }
+
   .sideBySide {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin-bottom: 4%;
+    margin-top: -2%;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    color: #fff;
   }
 
   .left {
@@ -37,11 +50,59 @@ const ResumeStyles = styled.div`
     display: flex;
     justify-content: center;
   }
+
+  .leftDiv {
+    margin-left: 10%;
+    margin-top: 0px;
+
+  }
+
+  .rightDiv {
+    margin-right: 10%;
+  }
+
 `;
 
 export default function Resume() {
   return (
     <ResumeStyles>
+      <p className="centeredTitle">Skills</p>
+      <div className="sideBySide">
+        <div className="leftDiv">
+        <p className="subtitle">Front-End</p>
+        <p className="skill">React Native</p>
+        <p className="skill">ReactJs</p>
+        <p className="skill">Javascript</p>
+        <p className="skill">Html</p>
+        <p className="skill">Css/ Css3</p>
+        <p className="skill">Three.js</p>
+        <p className="skill">Typescript</p>
+      </div>
+
+      <div>
+        <img src={Brain} alt="Brain" />
+      </div>
+
+<div className="rightDiv">
+  <div>
+        <p className="subtitle">Tools</p>
+        <p className="skill">Azure</p>
+        <p className="skill">Scrum/ Kanban</p>
+        <p className="skill">Git/ Github</p>
+        <p className="skill">Postman/ Insomnia</p>
+      </div>
+
+      <div>
+        <p className="subtitle">Back-End</p>
+        <p className="skill">Java</p>
+        <p className="skill">Rest Api</p>
+        <p className="skill">Sql</p>
+      </div>
+</div>
+      
+
+      </div>
+      
       <div className="sideBySide">
         <div className="left">
           <p className="title">Experience</p>
