@@ -6,7 +6,7 @@ const ButtonStyles = styled.div`
   .custom-btn {
     width: 180px;
     height: 40px;
-    color: #fff;
+    color: #FFF;
     padding: 10px 25px;
     font-weight: 500;
     background: transparent;

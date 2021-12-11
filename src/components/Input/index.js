@@ -10,7 +10,7 @@ const InputStyles = styled.div`
     font-size: 2rem;
     color: black;
     margin-top: 10px;
-    margin: 4px;
+    padding-left: 20px;
   }
 `;
 
