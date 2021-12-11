@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
-import Github from "../../assets/github.png";
-import Linkedin from "../../assets/linkedin-logo.png";
 import emailjs from "emailjs-com";
 
 const FormStyles = styled.div`
@@ -12,7 +10,7 @@ const FormStyles = styled.div`
   }
 
   .input {
-    background-color: #ece9e9;
+    background-color: #fff;
     border-color: #ece9e9;
     width: 100%;
     height: 80px;
@@ -24,7 +22,7 @@ const FormStyles = styled.div`
   }
 
   .subject {
-    background-color: #ece9e9;
+    background-color: #fff;
     border-color: #ece9e9;
     width: 100%;
     height: 80px;
@@ -36,15 +34,16 @@ const FormStyles = styled.div`
   }
 
   .message {
-    background-color: #ece9e9;
+    background-color: #fff;
     border-color: #ece9e9;
-    width: 100%;
-    height: 15rem;
+    width: 100.2%;
+    height: 12rem;
     font-size: 2rem;
     color: black;
     margin-top: 10px;
     margin: 4px;
     padding-left: 4%;
+    padding-top: 4%;
   }
 
   .sideBySide {
@@ -57,30 +56,10 @@ const FormStyles = styled.div`
     display: flex;
     justify-content: flex-end;
     height: 4vh;
+    margin-left: 20px;
+    width: 102.8%;
   }
 
-  .images {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 12%;
-  }
-
-  .git {
-    background-color: #ece9e9;
-    width: 7rem;
-    height: 7.2rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .linkedin {
-    background-color: #ece9e9;
-    width: 7rem;
-    height: 7.5rem;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-  }
 
 `;
 
@@ -135,26 +114,10 @@ export default function Form() {
           />
           <textarea className="message" placeholder="Message" name="message" />
           <div className="buttonDiv">
-            <Button buttonTitle={"Send"} type="submit" />
+            <Button buttonTitle={"Send"} type="submit"/>
           </div>
         </form>
       </div>
-
-      <div className="images">
-        <a href="https://github.com/medynahs">
-          <div className="git">
-            <img src={Github} alt="Github" width={120} />
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/ariane-medina/">
-          <div className="linkedin">
-            <img src={Linkedin} alt="Linkedin" width={120} />
-          </div>
-        </a>
-      
-      </div>
-
       
     </FormStyles>
   );
